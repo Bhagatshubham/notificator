@@ -16,6 +16,7 @@ sleep 0.3
 echo  "When you are done, please type the event name and press enter"
 echo ""
 read EVENT_NAME
+export EVENT_NAME
 sleep 0.3
 echo ""
 echo "4. In the 'Then That' section, add 'Notifications' and select 'Send a notification from the IFTTT app'. Press ENTER when you are done."
@@ -34,7 +35,7 @@ echo "Press ENTER when you are done."
 read
 echo -n "7. Copy the access key, paste it here and press ENTER: "
 read ACCESS_KEY
-#export ACCESS_KEY
+export ACCESS_KEY
 sleep 0.3
 echo "So far you have provided the following information:"
 echo ""
@@ -50,10 +51,12 @@ sleep 1
 echo "notif script made executable. Will configure to use your IFTTT key and event name."
 sleep 0.6
 echo "notif script configured. Copying it in /bin folder.. so that you can access from Cmdline"
-sleep 0.6
+sleep 1
 mv -f notif /bin/
+sync
 echo "You can use it by typing 'notif' in your terminal before the command you want to run, e.g. 'notif ls'."
-sleep 0.6
+sleep 1
 echo "Please remember that you have to download the IFTTT app on your mobile device to receive notifications."
 echo ""
+sleep 1
 echo "To reconfigure the notif, re-run this script or modify it in a text editor."
