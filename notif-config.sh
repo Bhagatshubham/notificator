@@ -49,7 +49,7 @@ read
 echo "Will now download the notif script in the current working directory:" $(pwd)
 sleep 0.6
 NOTIF_FILE="notif"
-curl -o ${NOTIF_FILE} https://github.com/Bhagatshubham/notificator/blob/main/notif
+curl -o ${NOTIF_FILE} https://github.com/Bhagatshubham/notificator/blob/688ce0dbbf6962c0a7cbe6cb2993377ea3c0b42e/notif
 echo "notif. script downloaded. Will now make it executable."
 chmod +x ${NOTIF_FILE}
 sleep 0.6
