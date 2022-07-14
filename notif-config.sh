@@ -1,4 +1,4 @@
-#!/usr/bin/
+#!/usr/bin/bash
 
 # A script to help you set up your notificator
 
