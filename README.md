@@ -32,7 +32,7 @@ It includes a step-by-step guide on how to:
 3. Getting your access key
 
 The configuration script will make all the necessary modifications to `notif` to work with your IFTTT account.
-You can run `notif-config.sh` either by downloading it from here, making it executable and running it on your computer
+You can run `source notif-config.sh` either by downloading it from here, making it executable and running it on your computer
 or by executing the following command:
 
 ```bash
